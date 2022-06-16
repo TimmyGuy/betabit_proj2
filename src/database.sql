@@ -1,11 +1,11 @@
 CREATE TABLE Badge (
-                       id int(11) primary key,
+                       id int(11) primary key AUTOINCREMENT,
                        title varchar(50) NOT NULL,
                        color varchar(25) NOT NULL
 );
 
 CREATE TABLE ProfileContainer (
-                                  id int(11) primary key,
+                                  id int(11) primary key AUTOINCREMENT,
                                   name varchar(50) NOT NULL,
                                   color varchar(25) NOT NULL,
                                   borderWidth int(5) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE ProfileContainer (
 );
 
 CREATE TABLE PictureContainer (
-                                  id int(11) primary key,
+                                  id int(11) primary key AUTOINCREMENT,
                                   name varchar(50) NOT NULL,
                                   color varchar(25) NOT NULL,
                                   borderWidth int(5) NOT NULL,
@@ -23,13 +23,13 @@ CREATE TABLE PictureContainer (
 );
 
 CREATE TABLE Transport (
-                           id int(11) primary key,
+                           id int(11) primary key AUTOINCREMENT,
                            name varchar(50) NOT NULL,
                            emission int(20) NOT NULL
 );
 
 CREATE TABLE User (
-                      id int(11) primary key,
+                      id int(11) primary key AUTOINCREMENT,
                       fullName varchar(150) NOT NULL,
                       email varchar(85) NOT NULL,
                       password varchar(255) NOT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE TravelPreference (
 );
 
 CREATE TABLE Log (
-                     id int(11) primary key,
+                     id int(11) primary key AUTOINCREMENT,
                      user int(11),
                      distance int(11),
                      transport int(11),

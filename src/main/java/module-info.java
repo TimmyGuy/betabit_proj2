@@ -9,7 +9,10 @@ module nl.betabit.betabit {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.sql;
 
     opens nl.betabit.betabit to javafx.fxml;
     exports nl.betabit.betabit;
+    exports nl.betabit.betabit.entities;
+    opens nl.betabit.betabit.entities to javafx.fxml;
 }
